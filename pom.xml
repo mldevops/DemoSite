@@ -186,7 +186,13 @@
     <dependencyManagement>
         <dependencies>
             <!-- Activated by the profiles above for the paths to tools.jar-->
-                     
+            <dependency>
+                <groupId>com.sun</groupId>
+                <artifactId>tools</artifactId>
+                <version>[1.7.0_67,)</version>
+               <scope>system</scope>
+               <systemPath>${toolsjar}</systemPath>
+            </dependency>
             <dependency>
                 <groupId>com.mycompany</groupId>
                 <artifactId>core</artifactId>
