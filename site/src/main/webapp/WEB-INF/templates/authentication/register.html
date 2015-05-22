@@ -2,7 +2,7 @@
     <div style="display:none;" th:fragment="title" th:inline="text">Register - Broadleaf Demo - Heat Clinic</div>
 
     <div id="register">
-        <h3><span th:text="#{register.registerForAccount}">Register for an New Account</span></h3>
+        <h3><span th:text="#{register.registerForAccount}">Register for an New User Account</span></h3>
         <p><span th:text="#{register.signUpNow}">Don't have an account yet? Register for one now to gain access to all our member tools</span>.</p>
 
         <blc:form id="registrationForm" action="#" th:object="${registrationForm}" th:action="@{/register}" method="post" class="clearfix">
