@@ -2,7 +2,7 @@
     <div style="display:none;" th:fragment="title" th:inline="text">Login - Broadleaf Demo - Heat Clinic</div>
     
     <div id="login">
-        <h3><span th:text="#{login.loginToAccount}">Login or Sign-in to your Broadleaf Account</span></h3>
+        <h3><span th:text="#{login.loginToAccount}">Login or Sign-in to Your Broadleaf Account</span></h3>
         <p><span th:text="#{login.alreadyMember}">Already a member? Sign in using the form below</span>.</p>
         
         <span class="error" th:if="${param.error}">
@@ -14,7 +14,7 @@
                 <input type="hidden" name="successUrl" th:if="${successUrl}" th:value="${successUrl}"/>
                 
                 <div class="form50">
-                    <label for="j_username"><span th:text="#{login.email}">Email</span></label>
+                    <label for="j_username"><span th:text="#{login.email}">Email id</span></label>
                     <input type="email" name="j_username" th:class="${param.error} ? 'field50 fieldError' : 'field50'" />
                 </div>
                 
