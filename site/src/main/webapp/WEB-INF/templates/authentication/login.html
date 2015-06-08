@@ -14,7 +14,7 @@
                 <input type="hidden" name="successUrl" th:if="${successUrl}" th:value="${successUrl}"/>
                 
                 <div class="form50">
-                    <label for="j_username"><span th:text="#{login.email}">Email id</span></label>
+                    <label for="j_username"><span th:text="#{login.email}">Email id or User name</span></label>
                     <input type="email" name="j_username" th:class="${param.error} ? 'field50 fieldError' : 'field50'" />
                 </div>
                 
